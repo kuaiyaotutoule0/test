@@ -1,0 +1,65 @@
+            display: block;
+            max-width: 120px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+      }
+ 
+      > .el-tree-node > .el-tree-node__content {
+        padding-left: 10px !important;
+      }
+    }
+  }
+ 
+  .rightView {
+    /* flex-basis: 50%; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 18px;
+    /* width: 100%; */
+    border-left: 1px solid #dbdbdb;
+ 
+    > header {
+      display: flex;
+      justify-content: space-between;
+      margin: 16px 0 12px 0;
+      padding-right: 10px;
+      font-size: 10px;
+ 
+      > span:nth-child(1) {
+        color: #222222;
+      }
+ 
+      > span:nth-child(2) {
+        color: #592c82;
+        cursor: pointer;
+      }
+    }
+ 
+    .checkedItem {
+      height: 100%;
+      overflow: overlay;
+ 
+      > li {
+        height: 26px;
+        margin-right: 18px;
+      }
+ 
+      .mark {
+        color: red;
+      }
+    }
+  }
+ 
+  .right-nodata {
+    color: #909399;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+  }
+}
+</style>
